@@ -2,16 +2,19 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   color: #333;
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 .se-controls {
   z-index: 99999;
   position: fixed;
   width: 100%;
   bottom: 0;
-  margin-bottom: 10% !important; }
-  .se-controls .button-group {
-    margin: 0 auto; }
+  margin-bottom: 10% !important;
+  .button-group {
+    margin: 0 auto;
+  }
+}
 
 .button {
   font-size: 16px;
@@ -34,10 +37,11 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
-  white-space: nowrap; }
-  .button.red {
+  white-space: nowrap;
+
+  &.red {
     background-color: #c9303b;
     background: -webkit-linear-gradient(#c94561, #c9303b);
-    background: linear-gradient(#c94561, #c9303b); }
-
-/*# sourceMappingURL=style.css.map */
+    background: linear-gradient(#c94561, #c9303b);
+  }
+}

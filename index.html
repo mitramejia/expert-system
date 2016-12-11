@@ -6,27 +6,47 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/white.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container-fluid">
-    <h1>Sistema Experto</h1>
-    <form>
-        <div class="form-group">
-            <label for="input">Instrucción</label>
-            <input id="input" type="text"/>
-            <input id="submit" type="button" value="Enviar">
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Sistema Experto</h1>
+                <p>Mitra Mejía <span>13-1060</span></p>
+                <p>Daniel Moreno<span>13-1060</span></p>
+                <h4>Dra. Ing. Rina Familia </h4>
+
+            </section>
+            <section>
+                <h2>¿Su computadora enciende?</h2>
+
+                <section>
+                    <h2>¿El cable de corriente está conectado?</h2>
+                </section>
+
+            </section>
+            <section>
+                <h2>¿Su computadora enciende?</h2>
+            </section>
+            <div class="se-controls">
+                <div class="button-group">
+                    <button id="btn-no" class="button red btn-primary btn-lg">No</button>
+                    <button id="btn-yes" class="button btn-primary btn-lg">Si</button>
+                </div>
+            </div>
         </div>
-        <p id="message">Hello</p>
-    </form>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+
+    </div>
+
+<script src="js/reveal.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
 </body>
