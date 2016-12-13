@@ -11,7 +11,9 @@
 Reveal.initialize({
     transition: 'fade',
     overview: false,
-    slideNumber: true
+    slideNumber: true,
+    progress: false,
+    controls: false,
 });
 
 $(document).on("ready", function () {
