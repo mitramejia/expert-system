@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -16,35 +16,105 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="reveal">
-        <div class="slides">
-            <section>
-                <h1>Sistema Experto</h1>
-                <p>Mitra Mejía <span>13-1060</span></p>
-                <p>Daniel Moreno<span>13-1060</span></p>
-                <h4>Dra. Ing. Rina Familia </h4>
+<div class="reveal">
+    <div class="slides">
+        <section id="slide-0">
+            <h1>Sistema Experto</h1>
+            <br>
+            <h5>Dra. Ing. Rina Familia </h5>
+            <p>Mitra Mejía <b>13-1060</b></p>
+            <p>Daniel Moreno <b>13-1060</b></p>
+            <br>
+            <button class="se-transition button" data-to="1">Continuar</button>
+        </section>
 
-            </section>
-            <section>
-                <h2>¿Su computadora enciende?</h2>
+        <section id="slide-1">
+            <h3>¿Su computadora enciende?</h3>
+            <button class="se-transition button" data-to="4">Si</button>
+            <button class="se-transition button red" data-to="5">No</button>
+        </section>
 
-                <section>
-                    <h2>¿El cable de corriente está conectado?</h2>
-                </section>
+        <section id="slide-2">
+            <h3>Conecta el cable de corriente y vuelve a encender la computadora</h3>
+            <div class="slide-image"><img src="img/magsafe2_adpater.jpg"></div>
+            <button class="se-transition button" data-to="6">Listo!</button>
+        </section>
 
-            </section>
-            <section>
-                <h2>¿Su computadora enciende?</h2>
-            </section>
-            <div class="se-controls">
-                <div class="button-group">
-                    <button id="btn-no" class="button red btn-primary btn-lg">No</button>
-                    <button id="btn-yes" class="button btn-primary btn-lg">Si</button>
-                </div>
-            </div>
+        <section id="slide-3">
+            <h3>¿Hay luz eléctrica en el sitio donde esta la computadora?</h3>
+            <button class="se-transition button" data-to="11">Si</button>
+            <button class="se-transition button red" data-to="16">No</button>
+        </section>
+
+        <section id="slide-4"><h3>¿La computadora muestra algo en pantalla?</h3>
+            <button class="se-transition button" data-to="10">Si</button>
+            <button class="se-transition button red" data-to="7">No</button>
+        </section>
+
+        <section id="slide-5"><h3>¿El cable de video está conectado?</h3>
+            <button class="se-transition button" data-to="6">Si</button>
+            <button class="se-transition button red" data-to="2">No</button>
+        </section>
+
+        <section id="slide-6"><h3>Conecta el cable de vídeo</h3>
+            <button class="se-transition button" data-to="17">Listo!</button>
+        </section>
+
+        <section id="slide-7"><h3>Conecte un monitor distinto e intente nuevamente</h3>
+            <div class="slide-image"><img src="img/monitor.jpg"></div>
+            <button class="se-transition button" data-to="10">Funciona</button>
+            <button class="se-transition button red" data-to="11">No Funciona</button>
+        </section>
+
+        <section id="slide-8"><h3>¿La computadora muestra el escitorio?</h3>
+            <div class="slide-image"><img src="img/login.jpg"></div>
+        </section>
+
+        <section id="slide-9"><h3>Debe enviar el equipo a una tienda autorizada por Apple para reparar su
+            computadora</h3>
+        </section>
+
+        <section id="slide-10"><h3>Desenchufa todos los cables y conectores de tu iMac. Luego, voltéala.</h3>
+            <div class="slide-image"><img src="img/mac_mini_original_serial.jpg"/></div>
+            <p>El número de serie y el número ID de Ethernet con códigos de barras están en una etiqueta situada en el
+                borde de la carcasa inferior de la computadora (abajo).</p>
+        </section>
+
+        <section id="slide-11"><h3>En la superficie de la computadora</h3>
+            <div class="slide-image"><img src="img/find_serial_number.jpg"/></div>
+            <p>Puedes encontrar el número de serie en la etiqueta de configuración del modelo, ubicada en la parte
+                posterior de la computadora, justo debajo de los puertos de video.</p></section>
+
+        <section id="slide-12"><h3>Todo Bien</h3>
+            <div class="slide-image"><img src="img/Yup.jpg"></div>
+
+        </section>
+    <section id="slide-13">
+        <h3>Debe enviar el equipo a una tienda autorizada por Apple para reparar su
+        computadora</h3>
+    </section>
+
+
+    <section id="slide-14">
+        <h3>Ve a otro sitio o espera a quevuelva la luz</h3>
+        <div class="slide-image">
+            <img src="img/toobad.jpg">
         </div>
+    </section>
 
-    </div>
+    <section id="slide-15"><h3>¿La computadora muestra algo en pantalla?</h3>
+        <button class="se-transition button" data-to="8">Si</button>
+        <button class="se-transition button red" data-to="7">No</button>
+    </section>
+
+    <section id="slide-16"><h3>Eliga el modelo de computadora que posee</h3>
+        <div class="mac-choice se-transition mac-choice" data-to="10"><img src="img/iMac_2_.svg"><p>iMac</p></div>
+        <div class="mac-choice se-transition" data-to="11"><img src="img/Mac_Pro_1_.svg"><p>Mac Pro</p></div>
+    </section>
+
+</div>
+</div>
+
 
 <script src="js/reveal.js"></script>
 <script src="js/bootstrap.min.js"></script>
